@@ -36,11 +36,11 @@ LUV Designs is an app, that allows user to add any style design accessories to h
 
 #### Wireframes
 
-![imgAlt](https://i.imgur.com/2K5bghM.png)
+![imgAlt](https://i.imgur.com/yEGhA8o.png)
 
 #### Component Tree
 
-![imgAlt](https://i.imgur.com/0dYY3qn.png)
+![imgAlt](https://i.imgur.com/XKRVpA2.png)
 
 
 #### Component Architecture
@@ -48,14 +48,24 @@ LUV Designs is an app, that allows user to add any style design accessories to h
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
+|__ containers/
+      |__ MainContainer.jsx
+__ layouts/
+      |__ Layout.jsx
+|__ screens/
+      |__ Login.jsx
+      |__ Register.jsx
+      |__ Romms.jsx
+      |__ DecorList.jsx
+      |__ Details.jsx
+      |__ Edit.jsx
+      |__ Create.js
+      |__ Delete.jsx
 |__ services/
+      |__ auth.js
+      |__ config.jsx
+      |__ items.js
+      |__ rooms.jsx
 
 ```
 
