@@ -66,6 +66,10 @@ __ layouts/
       |__ config.jsx
       |__ items.js
       |__ rooms.jsx
+|__ App.css/
+|__ App.js/
+|__ Index.css/
+|__ Index.js/
 
 ```
 
