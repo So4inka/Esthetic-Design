@@ -1,5 +1,5 @@
-# Esthetic-Design
-Esthetic Design is an app, that allows user to add any style design accessories to his or her home interior. Our App offers different styles and categories of our design items. 
+# LUV Designs
+LUV Designs is an app, that allows user to add any style design accessories to his or her home interior. Our App offers different styles and categories of our design items. 
 
 <br>
 
