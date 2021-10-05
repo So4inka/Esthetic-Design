@@ -5,7 +5,7 @@ LUV Designs is an app, that allows user to add any style design accessories to h
 
 ## MVP
 
-_The **LUV Designs** MVP are to create an app, where user will be able to sign in/sign up. Once creted account user can create a room(s) and match home decor items for any specific room. To achieve this goal I will use FULL CRUD on the Back end & Fron end.
+ **LUV Designs** MVP's are to create an app, where user will be able to sign in/sign up. Once creted account user can create a room(s) and match home decor items for any specific room. To achieve this goal I will use FULL CRUD on the Back end & Fron end.
 <br>
 
 ### Goals
@@ -67,7 +67,7 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Create Rails App    |    L     |     1 hrs      |     1 hrs     |    1 hrs    |
 | Create models/schema|    L     |     1 hrs      |     1 hrs     |    1 hrs    |
-| Create seed data    |    L     |     2 hrs      |     2 hrs     |    3 hrs    |
+| Create/populate seed data|    L     |     3 hrs      |     3 hrs     |    3 hrs    |
 | Setup CORS          |    L     |   .30 hrs      |     0.30 hrs     |    0.30hrs  |
 | Create controllers  |    L     |     2 hrs      |     2 hrs     |    3 hrs    |
 | Create routes       |    L     |     2 hrs      |     2 hrs     |    3 hrs    |
@@ -81,7 +81,7 @@ src
 | Style with Bootstrap|    H     |     3 hrs      |     3 hrs     |     TBD     |
 | Check & finish MVP  |    H     |     3 hrs      |     2 hrs     |     TBD     |
 | Styling Screens     |    L     |     5 hrs      |     5 hrs     |     TBD     |
-| TOTAL               |          |     36 hrs     |     30 hrs    |     TBD     |
+| TOTAL               |          |     37 hrs     |     31 hrs    |     TBD     |
 
 
 <br>
