@@ -36,7 +36,7 @@ LUV Designs is an app, that allows user to add any style design accessories to h
 
 #### Wireframes
 
-![imgAlt](https://i.imgur.com/dd2G6jk.png)
+![imgAlt](https://i.imgur.com/2K5bghM.png)
 
 #### Component Tree
 
