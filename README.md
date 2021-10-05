@@ -4,7 +4,7 @@ LUV Designs is an app, that allows user to add any style design accessories to h
 <br>
 
 ## MVP
-- 
+
 _The **LUV Designs** MVP are to create an app, where user will be able to sign in/sign up. Once creted account user can create a room(s) and match home decor items for any specific room. To achieve this goal I will use FULL CRUD on the Back end & Fron end.
 <br>
 
@@ -27,9 +27,8 @@ _The **LUV Designs** MVP are to create an app, where user will be able to sign i
 |      React       | _JavaScript library for building user interfaces._ |
 |   React Router   | _React Router is used to define multiple routes in the application._|
 | React Bootstrap | _React library that makes easier for UI foundation._|
-|    RubyGems   | _tool designed to easily manage the installation of gems,|
-|                 |    and a server for distributing them._         |
-|  Ruby on Rails  | _A web-application framework that includes everything needed to create database-backed web applications ._         |
+|    RubyGems   | _tool designed to easily manage the installation of gems, and a server for distributing them._|
+|  Ruby on Rails  | _A web-application framework that includes everything needed to create database-backed web applications ._|
 
 <br>
 
