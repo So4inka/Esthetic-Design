@@ -1,5 +1,6 @@
 class RoomsController < ApplicationController
   before_action :set_room, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /rooms
   def index
@@ -10,15 +11,16 @@ class RoomsController < ApplicationController
 
   # GET /rooms/1
   def show
-    render json: @room
+    render json: @room, include: :items
   end
 
   # POST /rooms
   def create
     @room = Room.new(room_params)
+    @room.user = @current_user
 
     if @room.save
-      render json: @room, status: :created, location: @room
+      render json: @room, status: :created
     else
       render json: @room.errors, status: :unprocessable_entity
     end
@@ -46,6 +48,6 @@ class RoomsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def room_params
-      params.require(:room).permit(:name, :user_id)
+      params.require(:room).permit(:name)
     end
 end
