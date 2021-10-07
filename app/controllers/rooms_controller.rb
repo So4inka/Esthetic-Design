@@ -1,6 +1,7 @@
 class RoomsController < ApplicationController
   before_action :set_room, only: [:show, :update, :destroy]
   before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :authorize
 
   # GET /rooms
   def index
@@ -45,9 +46,17 @@ class RoomsController < ApplicationController
     def set_room
       @room = Room.find(params[:id])
     end
-
+ 
     # Only allow a list of trusted parameters through.
     def room_params
       params.require(:room).permit(:name)
     end
+
+    def authorize 
+      @authorized_user = @room.user == @current_user
+      if !@authorized_user 
+        render json: 'Sorry, you are not authorized', status: :unauthorized
+    end
+    end
 end
+
