@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* .background-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+/* "https://imgur.com/wTkAT8z.jpg" */
+
+.background-top {
+  background-image: url(https://imgur.com/cW97zER.jpg);
+  display: flex;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* position: absolute; */
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  /* padding-bottom: 100%; */
+  margin-bottom: 3%;
+  margin-top: -132px;
+}
