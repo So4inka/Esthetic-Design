@@ -29,16 +29,16 @@ export default function ItemDetail(props) {
 
   return (
     <div className="show">
-      <Link to='/ItemsList'>Home Decor</Link>
-      {/* set up home decor either as Link or route  */}
+      {/* <Link to='/ItemList'>Home Decor</Link> */}
+     
       <h3>{decorItem?.name}</h3>
-      <h2>{item.name}</h2>
+    
       <br />
-      <img src={item.img_url} />
+      <img src={decorItem?.img_url} />
       <br />
-      <p>{item.description}</p>
+      <p>{decorItem?.description}</p>
       <br />
-      <p>{item.style}</p>
+      <p>{decorItem?.style}</p>
       )
       // Below code is for drop down menu!
       <form onSubmit={handleSubmit}>
