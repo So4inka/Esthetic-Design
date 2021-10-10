@@ -1,10 +1,22 @@
 import { Link } from "react-router-dom";
+import "./Layout.css";
+
 
 export default function Layout(props) {
   return (
-    <div>
+    <div className='background-layout'>
       <header>
-        <h1>LUV Designs</h1>
+        {/* <h1>LUV Designs</h1> */}
+        <div className="logo-home">
+            <Link  to="/">
+              <img
+                src="https://i.imgur.com/UGbIDk3.png"
+                alt="logo"
+                height="250"
+                width="250"
+              />
+            </Link>
+            </div>
         {props.currentUser ? (
           <div>
             <p>{props.currentUser.username}</p>
@@ -22,6 +34,6 @@ export default function Layout(props) {
         )}
       </header>
       {props.children}
-    </div>
-  );
-}
+     </div>
+    );
+  }

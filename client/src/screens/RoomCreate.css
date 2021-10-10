@@ -1,0 +1,22 @@
+.create-form {
+  display: flex;
+  width: 50%;
+
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30vh 50vw;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.606);
+  margin-top: 25vh;
+  padding: 80px;
+}
+.inputName,
+.inputPrice,
+.inputDescription,
+.inputImage {
+  border: 1px solid rgb(0, 0, 0);
+}

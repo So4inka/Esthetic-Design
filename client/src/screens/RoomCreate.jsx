@@ -14,7 +14,8 @@ export default function RoomCreate(props) {
     };
 
   return (
-    <form onSubmit={(e)=> {
+    
+    <form className='create-form' onSubmit={(e)=> {
       e.preventDefault()
       props.handleRoomCreate(formData);
     }}>

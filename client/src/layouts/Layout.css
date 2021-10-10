@@ -1,0 +1,33 @@
+.logo-home {
+  display: flex;
+  /* justify-content: space-between; */
+  z-index: 3;
+}
+
+@media screen and (max-width: 990px) {
+  .logo-home {
+    width: 98%;
+    padding: 0 20px;
+    justify-content: flex-end;
+  }
+}
+.background-layout {
+background-color: azure;
+}
+
+.footer img {
+  height: 20px;
+  margin: 5px;
+}
+.footer {
+  margin-top: 10rem;
+  padding: 1rem;
+  background-color: azure;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+}

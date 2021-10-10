@@ -9,8 +9,10 @@ export default function ItemDetail(props) {
   const { rooms } = props;
 
   useEffect(() => {
+    console.log(id)
     const fetchDecorItem = async () => {
       const itemData = await getOneItem(id);
+      console.log(itemData)
       setDecorItem(itemData);
     };
     fetchDecorItem();
@@ -30,36 +32,43 @@ export default function ItemDetail(props) {
   return (
     <div className="show">
       {/* <Link to='/ItemList'>Home Decor</Link> */}
-     
-      <h3>{decorItem?.name}</h3>
-    
-      <br />
-      <img src={decorItem?.img_url} />
-      <br />
-      <p>{decorItem?.description}</p>
-      <br />
-      <p>{decorItem?.style}</p>
-      )
-      // Below code is for drop down menu!
-      <form onSubmit={handleSubmit}>
-        <select onChange={handleChange} defaultValue='default'>
-          {/* we can set a default value to tell people to select a room*/}
-          {/* the "defaultValue" on the <select> tag needs to match the "value" on our default <option> tag */}
-          {/* we also add the "disabled" in the <option> to prevent users from selecting it*/}
-          <option disabled value='default'>
-            -- Select the  Room --
-          </option>
-          {/* now we loop over all rooms and return an <option> tag for each */}
+      <div className="item-detail">
+        <img
+          className="item-image"
+          src={decorItem?.img_url}
+          alt={decorItem?.name}
+        />
+        <div className='info-detail'>
+          <div className="name">{decorItem?.name}</div>
+        </div>
+        <br />
+        <div className="description">{decorItem?.description}</div>
+        <br />
+        <div className="style">{decorItem?.style}</div>
+        {/* // Below code is for drop down menu! */}
+        <div className="drop-down">
 
-          {rooms.map((room) => (
-            // we track the room's id as the "value" which will get added to state onChange
-            // the room's name goes between the open and close tag which is what the user sees
-            <option value={room.id}>{room.name}</option>
-          ))}
-        </select>
-        <button>Add</button>
-      </form>
+          <form onSubmit={handleSubmit}>
+            <select onChange={handleChange} defaultValue='default'>
+              {/* we can set a default value to tell people to select a room*/}
+              {/* the "defaultValue" on the <select> tag needs to match the "value" on our default <option> tag */}
+              {/* we also add the "disabled" in the <option> to prevent users from selecting it*/}
+              <option disabled value='default'>
+                -- Select the  Room --
+              </option>
+              {/* now we loop over all rooms and return an <option> tag for each */}
+
+              {rooms.map((room) => (
+                // we track the room's id as the "value" which will get added to state onChange
+                // the room's name goes between the open and close tag which is what the user sees
+                <option value={room.id}>{room.name}</option>
+              ))}
+            </select>
+            <button>Add</button>
+          </form>
+        </div>
+      </div>
     </div>
  
   );
-  }
+}

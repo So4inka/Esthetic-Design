@@ -10,11 +10,13 @@ def index
 end
 
 # GET /items/1
-def show
+def show  
+  @item= Item.find(params[:id])
+
   render json: @item, include: :rooms
 end
 
- # adding items to the room method:
+ # adding items to the room method: PUT '/rooms/:room_id/items/:id'
  def add_item_to_the_room
   @item = Item.find(params[:id])
   @room = Room.find(params[:room_id])

@@ -1,12 +1,12 @@
 class RoomsController < ApplicationController
   before_action :set_room, only: [:show, :update, :destroy]
   before_action :authorize_request, only: [:create, :update, :destroy]
-  before_action :authorize, except: [:index, :show]
-  before_action :set_admin, only: [:index] 
+  # before_action :authorize, except: [:index, :show]
+  # before_action :set_admin, only: [:index] 
   # GET /rooms
   def index
-    @rooms = Room.where(user:[@admin, @current_user])
-
+    # @rooms = Room.where(user:[@admin, @current_user])
+   @rooms = Room.all
     render json: @rooms
   end
 
@@ -63,16 +63,16 @@ class RoomsController < ApplicationController
     params.require(:room).permit(:name)
   end
 
-  def set_admin 
-    @admin = User.where(email: 'Admin@email.com')
-  end
+  # def set_admin 
+  #   @admin = User.where(email: 'Admin@email.com')
+  # end
 
-  def authorize 
-    @authorized_user = @room.user == @current_user
-    if !@authorized_user 
-     render json: 'Sorry, access denied', status: :unauthorized
-    end
-  end
+  # def authorize 
+  #   @authorized_user = @room.user == @current_user
+  #   if !@authorized_user 
+  #    render json: 'Sorry, access denied', status: :unauthorized
+  #   end
+  # end
 end
  
 

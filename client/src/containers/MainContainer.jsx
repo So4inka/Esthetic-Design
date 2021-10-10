@@ -9,6 +9,7 @@ import Rooms from '../screens/Rooms';
 import RoomCreate from "../screens/RoomCreate";
 import RoomEdit from "../screens/RoomEdit";
 import ItemDetail from "../screens/ItemDetail";
+import UserRoom from '../screens/UserRoom';
 
 export default function MainContainer() {
   const [rooms, setRooms] = useState([]);
@@ -65,6 +66,9 @@ export default function MainContainer() {
       </Route>
       <Route path="/rooms/new">
         <RoomCreate handleRoomCreate={handleRoomCreate} />
+      </Route>
+      <Route path='/rooms/:id'>
+        <UserRoom />
       </Route>
       <Route path='/rooms'>
         <Rooms rooms={rooms} handleRoomDelete={handleRoomDelete} />

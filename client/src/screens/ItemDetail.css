@@ -1,0 +1,106 @@
+.item-detail {
+  display: flex;
+  padding: 10%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+.name {
+  font-size: 64px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 1px;
+  padding: 5px;
+  color: black;
+}
+
+.style {
+  padding-top: 20px;
+  font-size: 28px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 26px;
+}
+
+.description {
+  padding-top: 20px;
+  letter-spacing: 0.9px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 24px;
+  color: black;
+}
+.product-detail-image {
+  height: 35%;
+  width: 40%;
+}
+
+.item-image {
+  height: 35%;
+  width: 40%;
+}
+
+.drop-down {
+
+}
+
+.info-detail {
+  height: 50%;
+  width: 62%;
+  margin-top: 2%;
+  text-align: center;
+  display: inline-flexbox;
+}
+
+@media (max-width: 1024px) {
+  .name {
+    font-size: 32px;
+  }
+  .product-detail-image {
+    width: 60%;
+    margin-top: 5%;
+    padding: 10%;
+  }
+  .item-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfc8be;
+    /* margin: 20px; */
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.show {
+  background-image: url(https://i.imgur.com/QAsAIJG.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: alpha(Opacity=90);
+  opacity: 0.9;
+  display: flex;
+}
+
+
+@media (max-width: 850px) {
+  .item-image {
+    width: 60%;
+    /* margin: 15px;
+    padding: 10px; */
+  }
+  .item-detail {
+    padding: 2%;
+  }
+  .drop-down {
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+}
