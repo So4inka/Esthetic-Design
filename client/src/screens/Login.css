@@ -11,10 +11,16 @@ header {
 }
 
 p {
- font-size: 24px;
-  font-family: 'Ropa Sans', sans-serif; 
-  padding-bottom: 40px;
+  font-size: 36px;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  /* padding: 5px; */
+  color: black;
+  text-align: center;
+  margin-top: 5vw;
+  text-shadow: 2px 3px #bda6a2;
 }
+
 button.btn.btn-submit {
   color: white;
   background-color: #c0c9cd;
@@ -30,5 +36,18 @@ button.btn.btn-submit {
   justify-content: space-between;
   display: inline-flexbox;
   border-radius: 10px;
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: "Ropa Sans", sans-serif;
+}
+.form-login {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30vh 10vw;
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.606);
+  margin-top: 5vh;
+  padding: 10px;
 }

@@ -5,12 +5,27 @@
   align-items: center; 
   padding-top: 15vw;
   justify-content: flex-start;
-  /* align-items: start; */
-  /* justify-content: flex-end;
-  width: 50%;
-  height: 70%;
+  background-color: rgba(240, 238, 238, 0.606);
+  width: 50%; 
+  margin-top: 1vh;
+  padding: 10px;
   font-family: 'Ropa Sans', sans-serif;
   font-size: 20px;
-  /* border: 2px black solid; */
+  border-radius: 10px;
  
+}
+
+button.btn.btn-primary {
+  color: white;
+  background-color: #c0c9cd;
+  padding: 7px 10px;
+  margin-top: 5%;
+  margin: 25px;
+  border-radius: 0px;
+  letter-spacing: 1.5px;
+  flex-direction: row;
+  justify-content: center;
+  display: inline-flexbox;
+  border-radius: 10px;
+  font-family: "Ropa Sans", sans-serif;
 }
