@@ -1,20 +1,17 @@
-.form-login,
 .form-register {
   display: flex;
-  padding-right: 23vw;
-  flex-direction: column;
-  align-items: center; 
-  padding-top: 15vw;
-  justify-content: flex-start;
-  /* align-items: start; */
-  /* justify-content: flex-end;
   width: 50%;
-  height: 70%;
-  font-family: 'Ropa Sans', sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30vh 10vw;
+  font-family: "Ropa Sans", sans-serif;
   font-size: 20px;
-  /* border: 2px black solid; */
- 
+  background-color: rgba(242, 239, 239, 0.606);
+  margin-top: 5vh;
+  padding: 10px;
 }
+
 p {
   font-size: 24px;
   font-family: 'Ropa Sans', sans-serif; 
