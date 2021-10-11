@@ -1,59 +1,49 @@
+.show {
+  background-color: azure;
+  /* background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; */
+  filter: alpha(Opacity=90);
+  opacity: 0.9;
+  display: flex;
+  height: 500px;
+  display: flex;
+}
+
 .item-detail {
   display: flex;
+  flex-direction: column;
   padding: 10%;
   height: 100%;
   margin: 0 auto;
-  background-color: white;
-}
-
-.detail {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.6;
+  background-color: white; 
 }
 
 .name {
-  font-size: 64px;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  letter-spacing: 1px;
+  font-size: 36px;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
   padding: 5px;
   color: black;
 }
-
+.item-image {
+  height: 35%;
+  width: 40%;
+  border-radius: 10px;
+}
 .style {
   padding-top: 20px;
-  font-size: 28px;
-  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 26px;
+  font-family:  sans-serif;
+  font-size: 26px; 
 }
 
 .description {
   padding-top: 20px;
   letter-spacing: 0.9px;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 24px;
+  font-family: sans-serif;
+  font-size: 26px;
   color: black;
-}
-.product-detail-image {
-  height: 35%;
-  width: 40%;
-}
-
-.item-image {
-  height: 35%;
-  width: 40%;
-}
-
-.drop-down {
-
-}
-
-.info-detail {
-  height: 50%;
-  width: 62%;
-  margin-top: 2%;
-  text-align: center;
-  display: inline-flexbox;
 }
 
 @media (max-width: 1024px) {
@@ -79,8 +69,8 @@
   }
 }
 
-.show {
-  background-image: url(https://i.imgur.com/QAsAIJG.jpg);
+.wrap-detail {
+  background-image: url(https://i.imgur.com/XnDekWu.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -89,9 +79,8 @@
   display: flex;
 }
 
-
 @media (max-width: 850px) {
-  .item-image {
+  .product-detail-image {
     width: 60%;
     /* margin: 15px;
     padding: 10px; */
@@ -99,8 +88,9 @@
   .item-detail {
     padding: 2%;
   }
+ 
   .drop-down {
-    padding: 20px;
-    padding-bottom: 80px;
+    width: 60%;
+    height: 40%;
   }
 }

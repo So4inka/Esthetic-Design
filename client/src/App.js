@@ -49,7 +49,6 @@ function App() {
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
           <Route path="/login">
-            <h1>here is a note</h1>
             <Login handleLogin={handleLogin} />
           </Route>
           <Route path="/register">

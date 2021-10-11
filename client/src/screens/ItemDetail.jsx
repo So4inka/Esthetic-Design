@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getOneItem, addItemToTheRoom } from '../services/items';
+import './ItemDetail.css';
 
 export default function ItemDetail(props) {
   const [decorItem, setDecorItem] = useState(null);
@@ -33,18 +34,14 @@ export default function ItemDetail(props) {
     <div className="show">
       {/* <Link to='/ItemList'>Home Decor</Link> */}
       <div className="item-detail">
-        <img
-          className="item-image"
-          src={decorItem?.img_url}
-          alt={decorItem?.name}
-        />
-        <div className='info-detail'>
+        
+        <img className="item-image"  src={decorItem?.img_url}
+          alt={decorItem?.name} />
           <div className="name">{decorItem?.name}</div>
-        </div>
         <br />
         <div className="description">{decorItem?.description}</div>
         <br />
-        <div className="style">{decorItem?.style}</div>
+        <div className="style">Category:{decorItem?.style}</div>
         {/* // Below code is for drop down menu! */}
         <div className="drop-down">
 
