@@ -1,0 +1,50 @@
+
+h3 {font-size: 36px;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  /* padding: 5px; */
+  color: black;
+  text-align: center;
+  margin-top: 5vw;
+  text-shadow: 2px 3px #bda6a2;
+}
+
+.room-detail {
+  display: flex;
+  width: 50%;
+  flex-direction: raw;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5vh 5vw;
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 20px;
+  background-color: rgba(240, 238, 238, 0.606);
+  margin-top: 1vh;
+  padding: 10px;
+
+} 
+p {
+  font-size: 24px;
+   font-family: 'Ropa Sans', sans-serif; 
+   padding-bottom: 40px;
+ }
+ button.btn.btn-submit {
+   color: white;
+   background-color: #c0c9cd;
+   padding: 7px 10px;
+   margin-top: 5%;
+   margin: 25px;
+   border-radius: 0px;
+   letter-spacing: 1.5px;
+   flex-direction: row;
+   justify-content: space-between;
+   display: inline-flexbox;
+   border-radius: 10px;
+   font-family: 'Ropa Sans', sans-serif;
+ }
+ 
+/* .show-room {
+ display: flex;
+ grid-template-columns: repeat(3, 1fr);
+padding: 5%;
+} */

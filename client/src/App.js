@@ -2,7 +2,7 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 
-import Layout from "./layouts/Layout";
+import Home from "./screens/Home";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
 import MainContainer from "./containers/MainContainer";
@@ -46,8 +46,11 @@ function App() {
 
   return (
     <div className="App">
-      <Layout currentUser={currentUser} handleLogout={handleLogout}>
+      
         <Switch>
+        <Route path="/home">
+      <Home currentUser={currentUser} handleLogout={handleLogout}/>
+          </Route>
           <Route path="/login">
             <Login handleLogin={handleLogin} />
           </Route>
@@ -58,7 +61,6 @@ function App() {
             <MainContainer />
           </Route>
         </Switch>
-      </Layout>
     </div>
   );
 }

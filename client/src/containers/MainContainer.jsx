@@ -54,6 +54,9 @@ export default function MainContainer() {
 
   return (
     <Switch>
+       {/* <Route path="/home">
+        <Home items={items} />
+      </Route> */}
       <Route path="/itemList">
         <ItemList items={items} />
       </Route>

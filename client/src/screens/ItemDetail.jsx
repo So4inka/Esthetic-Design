@@ -43,9 +43,11 @@ export default function ItemDetail(props) {
         <br />
         <div className="style">Category:{decorItem?.style}</div>
         {/* // Below code is for drop down menu! */}
-        <div className="drop-down">
+   
 
-          <form onSubmit={handleSubmit}>
+          <form
+            className="drop-down"
+            onSubmit={handleSubmit}>
             <select onChange={handleChange} defaultValue='default'>
               {/* we can set a default value to tell people to select a room*/}
               {/* the "defaultValue" on the <select> tag needs to match the "value" on our default <option> tag */}
@@ -63,7 +65,6 @@ export default function ItemDetail(props) {
             </select>
             <button>Add</button>
           </form>
-        </div>
       </div>
     </div>
  

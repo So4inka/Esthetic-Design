@@ -1,22 +1,38 @@
 .create-form {
   display: flex;
   width: 50%;
-
-  display: flex;
-  width: 50%;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 30vh 50vw;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Ropa Sans", sans-serif;
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.606);
   margin-top: 25vh;
   padding: 80px;
 }
-.inputName,
-.inputPrice,
-.inputDescription,
-.inputImage {
+input {
   border: 1px solid rgb(0, 0, 0);
+}
+button.btn.btn-primary {
+  color: white;
+  background-color: #c0c9cd;
+  padding: 7px 10px;
+  margin-top: 5%;
+  margin: 25px;
+  border-radius: 0px;
+  letter-spacing: 1.5px;
+  flex-direction: row;
+  justify-content: center;
+  display: inline-flexbox;
+  border-radius: 10px;
+  font-family: "Ropa Sans", sans-serif;
+}
+
+label {
+  width: 40%;
+}
+
+h3 {
+  margin-top: 15%;
 }
