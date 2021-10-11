@@ -7,7 +7,6 @@ import { Card} from "react-bootstrap";
 export default function ItemList(props) {
   return (
     <div className="list">
-      {/* <h3>Home Decor</h3> */}
       {props.items.map((item) => (
       <Card style={{ width: "20rem" }}>
         <div key={item.id}>

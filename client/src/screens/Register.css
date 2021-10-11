@@ -1,13 +1,61 @@
-.form {
+.form-login,
+.form-register {
   display: flex;
-  padding-right: 5vw;
+  padding-right: 23vw;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 100%;
+  align-items: center; 
+  padding-top: 15vw;
+  justify-content: flex-start;
+  /* align-items: start; */
+  /* justify-content: flex-end;
+  width: 50%;
   height: 70%;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: 'Ropa Sans', sans-serif;
   font-size: 20px;
   /* border: 2px black solid; */
  
+}
+p {
+  font-size: 24px;
+  font-family: 'Ropa Sans', sans-serif; 
+  padding: 7%;
+}
+input {
+  display: flex;
+  padding-right: 15vw;
+  flex-direction: column;
+  align-items: center; 
+  padding-top: 2vw;
+  justify-content: space-around;
+}
+body {
+  background-color: azure;
+}
+
+header {
+  height: 180px;
+  background-color: azure;
+
+  align-items: center;
+  border-color: black;
+}
+
+button.btn.btn-primary {
+  color: white;
+  background-color: #c0c9cd;
+  padding: 7px 10px;
+  margin-top: 5%;
+  margin: 25px;
+  border-radius: 0px;
+  letter-spacing: 1.5px;
+  flex-direction: row;
+  justify-content: center;
+  display: inline-flexbox;
+  border-radius: 10px;
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+label {
+  width: 40%;
+
 }

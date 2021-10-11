@@ -22,18 +22,20 @@
 //       <div className="end">
       
 //       <footer className="footer">
+{/* <div className="footer-images">
 //       <a href="https://github.com/So4inka">
-//       <img src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png" />
+//       <img src="https://i.imgur.com/JMMrIY8.png" />
 //       </a>
 //       <a href="https://www.linkedin.com/in/nadezda-kallaur-65444a85/">
-//       <img src="https://i.imgur.com/bj7hAbc.png" />
+//       <img src="https://i.imgur.com/h6bqRF4.png" />
 //       </a>
 //       <a href="https://www.instagram.com/nadia_kallaur/">
-//       <img src="https://i.imgur.com/OZawu9A.png" />
+//       <img src="https://i.imgur.com/hfTC5IA.png" />
 //       </a>
 //       <a href="https://www.facebook.com/nadune4ka/">
-//       <img src="https://i.imgur.com/AmFK9On.png" />
+//       <img src="https://i.imgur.com/YbHVUfT.png" />
 //       </a>
+  </div> */}
 //       </footer>
 //       </div>
 //     </div>

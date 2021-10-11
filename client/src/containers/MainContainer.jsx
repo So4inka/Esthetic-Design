@@ -3,7 +3,6 @@ import { Switch, Route, useHistory } from "react-router-dom";
 
 import { getAllRooms, postRoom, deleteRoom, putRoom } from "../services/rooms";
 import { getAllItems } from "../services/items";
-// import Items from '../screen/Items'
 import ItemList from "../screens/ItemList";
 import Rooms from '../screens/Rooms';
 import RoomCreate from "../screens/RoomCreate";
