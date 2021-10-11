@@ -36,9 +36,20 @@
   border-radius: 10px;
   /* height: 315px; */
   object-fit: cover;
+  display: center;
   /* width: 25vw;
   height: 30vw; */
 }
+
+div.card {
+  background-color: #b9c5cb;
+  height: 34vw;
+  width: 26vw;;
+  margin: 7px 10px;
+  border-radius: 10px;
+  
+}
+
 
 /* .list {
   background-color: azure

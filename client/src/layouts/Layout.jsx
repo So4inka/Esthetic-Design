@@ -36,7 +36,7 @@ export default function Layout(props) {
       </header>
       {props.children}
     </div>
-     <footer className="footer">
+     {/* <footer className="footer">
      <div className="footer-images">
             <a className="footer-image-github" href="https://github.com/So4inka">
             <img src="https://i.imgur.com/JMMrIY8.png" />
@@ -51,7 +51,7 @@ export default function Layout(props) {
            <img src="https://i.imgur.com/YbHVUfT.png" />
            </a>
        </div> 
-      </footer>
+      </footer> */}
       </>
   );
 }
